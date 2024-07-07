@@ -194,6 +194,7 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 100px 0;
     color: var(--primary-color);
 }
 
@@ -216,9 +217,10 @@ section{
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 7.5px );
     -webkit-backdrop-filter: blur( 7.5px );
-    border-radius: 40px;
+    border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
+
 
 .checkpoints ul li:last-child{
     margin-bottom: 0;
@@ -234,4 +236,16 @@ section{
     font-size: 18px;
     line-height: 30px;
     margin-bottom: 10px;
+}
+
+.timeline-content p{
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 300;
+}
+.timeline-content .date{
+    font-size: 13px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
 }

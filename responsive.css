@@ -1,5 +1,73 @@
-@media(max-width:992px) {
+/* @media(max-width:992px) {
     .navbar{
         
+    }
+} */
+
+/* For Timeline in experience */
+@media  only screen and (min-width: 768px)  {
+    .timeline h1{
+        font-size: 2.5em;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+        align-items: center;
+    }
+
+    .checkpoints::before{
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 2px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: gray;
+    }
+    .checkpoints ul li{
+        width: 50%;
+        margin-bottom: 50px;
+        position: relative;
+    }
+
+    .checkpoints ul li:nth-child(odd){
+        float: left;
+        clear: right;
+        transform: translateX(-30px);
+        border-radius: 20px 0px 20px 20px;
+    }
+    .checkpoints ul li:nth-child(even){
+        float: right;
+        clear: left;
+        transform: translateX(30px);
+        border-radius: 0px 20px 20px 20px;
+    }
+
+    .checkpoints ul li::after{
+        content: '';
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        background-color: gray;
+        border-radius: 50%;
+        top: 0;
+    }
+
+    .checkpoints ul li:nth-child(odd)::after{
+        transform: translate(50%, -50%);
+        right: -30px;
+    }
+
+    .checkpoints ul li:nth-child(even)::after{
+        transform: translate(-50%, -50%);
+        left: -30px;
+    }
+
+    .checkpoints ul li:hover:after{
+        background-color: var(--secondary-color);
+    }
+
+    .timeline-content .date{
+        position: absolute;
+        top: -30px;
     }
 }
